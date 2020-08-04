@@ -1,0 +1,22 @@
+echo "Hello World"
+mkdir new_dir
+rm new_dir
+cp module-1/lab-bash/lorem/sed.txt module-1/lab-bash/lorem-copy
+cp module-1/lab-bash/lorem/at.txt module-1/lab-bash/lorem/lorem.txt | module-1/lab-bash/lorem-copy
+cat module-1/lab-bash/lorem/sed.txt
+cat module-1/lab-bash/lorem/at.txt lorem.txt
+head -n3 module-1/lab-bash/lorem-copy/sed.txt
+tail -n3 module-1/lab-bash/lorem-copy/sed.txt
+nano module-1/lab-bash/lorem-copy/sed.txt
+`Homo homini lupus.`
+tail -n3 module-1/lab-bash/lorem-copy/sed.txt
+sed 's/et/ET/g' module-1/lab-bash/lorem/at.txt > module-1/lab-bash/lorem-copy/at.txt
+grep -o et module-1/lab-bash/lorem/at.txt
+git config user.name
+pwd
+ls *.txt module-1/lab-bash/lorem
+cat at.txt  | wc -l
+git grep --count lorem
+grep -o et module-1/lab-bash/lorem/at.txt
+git grep -n et module-1/lab-bash/lorem/at.txt
+git grep --count et module-1/lab-bash/lorem-copy
